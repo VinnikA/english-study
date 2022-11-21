@@ -1,0 +1,34 @@
+@import '../../../styles/variables.scss';
+
+.btn {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+  min-width: 180px;
+  transition: 300ms;
+  cursor: pointer;
+  &:disabled {
+    background-color: $grey;
+  }
+  &_outlined {
+    @include outlined;
+    &:hover {
+      background-color: $primary;
+    }
+  }
+  &_filled {
+    @include filled;
+    &:hover {
+      background-color: $primary-light;
+      background-image: 
+        url('../../../assets/img/decoration/circle.png'),
+        url('../../../assets/img/decoration/star.png'),
+        url('../../../assets/img/decoration/star.png');
+      background-repeat: no-repeat;
+      background-position: 70% -10%, 10% -50%, 90% 300%;
+    }
+  }
+}

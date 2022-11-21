@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.feedbacks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: 
+    url('../../assets/img/decoration/huge-circle.png'), 
+    url('../../assets/img/decoration/circle.png'), 
+    url('../../assets/img/decoration/star.png') ;
+  background-repeat: no-repeat;
+  background-position: 42% 22%, 35% 20%, 19% 25%;
+  margin: 0 0 90px 0;
+}

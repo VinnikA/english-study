@@ -1,0 +1,52 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  background-color: $primary-light;
+  min-height: 260px;
+  padding: 52px 0 52px 0;
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  &__btn-block {
+    display: flex;
+    gap: 1rem;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__list-item {
+    margin: 0 0 1rem 0;
+  }
+  &__link {
+    display: block;
+    border-bottom: 2px solid transparent;
+    padding: 0 0 0.5rem 0;
+    transition: 500ms;
+    &:hover {
+      border-bottom: 2px solid #000;
+    }
+  }
+}
+
+.authors {
+  border-top: 2px solid $primary;
+  padding: 1rem 0 0 0;
+}
+.author {
+  padding: 0.25rem 0;
+  font-weight: 500;
+
+  &__link {
+    padding: 0 0.5rem;
+    border-bottom: 2px solid transparent;
+    transition: 500ms;
+    &:hover {
+      border-bottom: 2px solid #000;
+    }
+  }
+}

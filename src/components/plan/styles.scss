@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.plan {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  &__content {
+    padding: 1.5rem 0 0 1rem;
+  }
+}
+
+.plan-wrapper {
+  margin-bottom: 6rem;
+}

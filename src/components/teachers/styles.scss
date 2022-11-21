@@ -1,0 +1,81 @@
+@import '../../styles/variables.scss';
+
+.teachers {
+  position: relative;
+  height: 800px;
+  margin: 0 0 90px 0;
+}
+
+.teacher {
+  position: absolute;
+  &_one {
+    left: 0;
+    top: 0;
+  }
+  &_two {
+    right: 0;
+    top: 60px;
+  }
+  &_three {
+    left: 80px;
+    top: 380px;
+  }
+  &_four {
+    right: 120px;
+    top: 500px;
+  }
+  &__img {
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  &__quote {
+    position: absolute;
+    border: 2px solid $primary;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    width: 320px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    &_one {
+      left: 290px;
+      top: 10px;
+    }
+    &_two {
+      right: 360px;
+      top: 90px;
+    }
+    &_three {
+      left: 230px;
+      top: -50px;
+    }
+    &_four {
+      right: 300px;
+      top: 60px;
+    }
+    &_left, &_right {
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -9px;
+        width: 30px;
+        height: 30px;
+        border-bottom: 2px solid $primary;
+        background-color: $bg;
+      }
+    }
+    &_left {
+      &::before {
+        left: -9px;
+        border-left: 2px solid $primary;
+        transform: skew(-25deg, -25deg);
+      }
+    }
+    &_right {
+      &::before {
+        right: -9px;
+        border-right: 2px solid $primary;
+        transform: skew(25deg, 25deg);
+      }
+    }
+  }
+}

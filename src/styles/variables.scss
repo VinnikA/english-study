@@ -1,0 +1,14 @@
+$primary: #F2A43A;
+$primary-light: #FBE4C5;;
+$bg: #FEFBF4;
+$grey: #e0e0e0;
+
+@mixin outlined {
+  border: 2px solid $primary;
+  border-radius: 10px;
+}
+
+@mixin filled {
+  background-color: $primary;
+  border-radius: 10px;
+}

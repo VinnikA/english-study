@@ -1,0 +1,16 @@
+@import '../../../styles/variables.scss';
+
+.icon-btn {
+  @include outlined;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover {
+    background-color: $primary;
+  }
+}

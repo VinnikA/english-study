@@ -1,0 +1,18 @@
+@import 'the-new-css-reset/css/reset.css';
+@import './styles/fonts.scss';
+@import './styles/variables.scss';
+@import './styles/common.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $bg;
+}
+
+.app {
+  position: relative;
+  width: 100%;
+}

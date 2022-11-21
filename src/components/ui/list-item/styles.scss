@@ -1,0 +1,35 @@
+@import '../../../styles/variables.scss';
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin: 0 0 1rem 0;
+
+  &::before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    background-color: $primary;
+  }
+
+  &_small {
+    font-size: 1rem;
+    &::before {
+      width: 0.75rem;
+      min-width: 0.75rem;
+      height: 0.75rem;
+      margin: 0 0.5rem 0 0;
+    }
+  }
+
+  &_big {
+    font-size: 1.25rem;
+    &::before {
+      width: 1.75rem;
+      min-width: 1.75rem;
+      height: 1.75rem;
+      margin: 0 2rem 0 0;
+    }
+  }
+
+}

@@ -1,0 +1,8 @@
+@import '../../styles/variables.scss';
+
+.lessons {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 0 6rem 0;
+}

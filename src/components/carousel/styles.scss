@@ -1,0 +1,81 @@
+@import '../../styles/variables.scss';
+
+.carousel {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin: 4rem 0 0 0;
+
+  &__screen {
+    position: relative;
+    display: flex;
+    width: 840px;
+    min-width: 840px;
+    height: 360px;
+    overflow: hidden;
+  }
+
+  &__bullets {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+}
+
+.bullet {
+  width: 1rem;
+  height: 1rem;
+  background-color: $primary-light;
+  border-radius: 50%;
+  cursor: pointer;
+  &_active {
+    background-color: $primary;
+  }
+}
+
+.testimonial {
+  position: absolute;
+  top: 0;
+  max-width: 840px;
+  min-width: 840px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  transition: 500ms;
+
+  &_left {
+    left: -840px;
+    opacity: 0;
+  }
+
+  &_center {
+    left: 0px;
+    opacity: 1;
+  }
+
+  &_right {
+    left: 840px;
+    opacity: 0;
+  }
+
+  &__img {
+    min-width: 350px;
+  }
+
+  &__content {
+    max-width: 400px;
+  }
+
+  &__text, &__author {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+  }
+
+  &__author {
+    color: $primary;
+  }
+
+}

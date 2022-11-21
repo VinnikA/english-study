@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.header {
+  &__wrapper {
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  &__link {
+    display: block;
+    padding: 1rem;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    transition: 500ms;
+    &:hover {
+      border-bottom: 2px solid #000;
+    }
+    &_btn {
+      @include filled;
+      padding: 1rem 2rem;
+      border-bottom: none;
+      &:hover {
+        border-bottom: none;
+        background-color: $primary-light;
+        background-image: 
+          url('../../assets/img/decoration/circle.png'),
+          url('../../assets/img/decoration/star.png');
+        background-repeat: no-repeat;
+        background-position: 20% -20%, 90% 300%;
+      }
+    }
+  }
+}
